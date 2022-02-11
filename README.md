@@ -29,4 +29,4 @@ SO THAT I can review samples of their work and assess whether they're a good can
 * THEN I am presented with a responsive layout that adapts to my viewport
 
 # Screenshot:
-![image](./pictures/readme screenshot.png) 
+![image](https://user-images.githubusercontent.com/96391351/153538288-9382b285-ee5d-4edf-9220-9d0abb1e8e67.png)
