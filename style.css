@@ -1,95 +1,363 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
-
-header {
-    padding: 20px 35px;
-    background-color: lightslategray;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top:0;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
-    z-index: 9999;
-}
-
-header h1 {
-    font-weight: bold;
-    font-size: 40px;
-    color:antiquewhite;
+    padding: 0;
     margin: 0;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-header a {
-    text-decoration: none;
-    color: antiquewhite;
+body {
+    background-color: #d9dcd6;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
     float: right;
-    text-align: center;
-    align-content: center;
-    padding: 14px 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-header a:hover {
-    background-color: antiquewhite;
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.hero {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./pictures/jumboback.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.about-me {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
 }
 
-#profilepicture {
-    color: antiquewhite;
-    font-size: 20px;
+.work {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-decoration: underline;
     float: left;
 }
 
-.aboutmyself {
-    margin-left: 25%;
-    border-left: 3px solid black;
-}
-
-.intro p {
-    line-height: 1.7;
+.run-buddy {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 200px;
+    width: 700px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightblue;
     color: black;
-    width: 80px;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
+    background-image: url(./pictures/run-buddy.png);
+    text-decoration: underline;
 }
 
-.flex-row {
-    display: flex;
+.run-buddy:hover{
+    border: 5px solid rgb(30, 255, 236);
+    cursor:pointer;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    padding: 16px;
-    text-align: center;
+.run-buddy a {
+    font-weight: bold;
+    margin: auto;
+    color: black;
+    font-size: 30px;
+}
+
+.run-buddy a:hover {
     background-color: antiquewhite;
+    color: black;
 }
 
-.grid-con1 {
+#grid {
     display: grid;
-    grid-template-columns: auto;
-    margin-left: 25%;
-    border-left: 3px solid black;
+    grid-auto-flow: column dense;
+    float: left;
 }
 
-.grid-item1 {
-    border: 5px solid black;
-    margin: 10px;
-    padding: 195px 20px 100px 0;
-    text-align: center;
-    font-size: 25px;
+.led-walls {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 150px;
+    width: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightblue;
+    color: black;
+    background-image: url(./pictures/LED\ Walls.jpg);
 }
 
-.grid-item1:hover {
-    border: 5px solid rgb(119, 136, 153);
+.led-walls:hover {
+    border: 5px solid rgb(30, 255, 236);
     cursor: pointer;
+}
+
+.led-walls a {
+    font-weight: bold;
+    margin: auto;
+    color: antiquewhite;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.led-walls a:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.horiseon {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 150px;
+    width: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightblue;
+    color: black;
+    background-image: url(./pictures/horiseon.png)
+}
+
+.horiseon:hover {
+    border: 5px solid rgb(30, 255, 236);
+    cursor: pointer;
+}
+
+.horiseon a {
+    font-weight: bold;
+    margin: auto;
+    color: antiquewhite;
+    font-size: 30px;
+    text-decoration: underline
+}
+
+.horiseon a:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.calculator {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 150px;
+    width: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightblue;
+    color: black;
+    background-image: url(./pictures/surf.jpg)
+}
+
+.calculator:hover {
+    border: 5px solid rgb(30, 255, 236);
+    cursor: pointer;
+}
+
+.calculator a {
+    font-weight: bold;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    text-decoration: underline
+}
+
+.calculator a:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.pastel {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 150px;
+    width: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightblue;
+    color: black;
+    background-image: url(./pictures/jojos.jpg)
+}
+
+.pastel:hover {
+    border: 5px solid rgb(30, 255, 236);
+    cursor: pointer;
+}
+
+.pastel a {
+    font-weight: bold;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    text-decoration: underline
+}
+
+.pastel a:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.contact-me {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+.contact-me a {
+    font-size: large;
+    color: blue;
+    display: grid;
+    grid-template-columns: row;
+    text-decoration: underline;
+}
+
+.about-me img {
+    max-height: 200px;
+}
+
+.work img {
+    max-height: 200px;
+}
+
+
+.about-me h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.work h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.contact-me h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.about-me p {
+    font-size: 23px;
+    text-align: center;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    float: left;
+}
+
+.footer h2 {
+    font-size: 20px;
 }
