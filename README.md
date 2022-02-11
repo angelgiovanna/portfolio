@@ -29,4 +29,4 @@ SO THAT I can review samples of their work and assess whether they're a good can
 * THEN I am presented with a responsive layout that adapts to my viewport
 
 # Screenshot:
-![alt](/portfolio/pictures/readme screenshot.png) 
+![image](./pictures/readme screenshot.png) 
